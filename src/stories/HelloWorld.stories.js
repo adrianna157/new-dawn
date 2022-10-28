@@ -1,4 +1,4 @@
-import HelloWorld from './HelloWorld.vue';
+import HelloWorld from '../components/HelloWorld.vue';
 
 export default {
     title: 'HelloWorld',

@@ -12,7 +12,7 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to the Vuetify 3 Beta
+          Welcome {{ name }} to the Vuetify 3 Beta
         </h1>
 
           <h4>Vite Preview</h4>
@@ -113,6 +113,7 @@
 </template>
 
 <script>
+import { ENUMBODY_TYPES } from '@babel/types';
 import logo from '../assets/logo.svg'
 
 export default {
@@ -167,5 +168,10 @@ export default {
       },
     ],
   }),
+  props: {
+    name: {
+      type: String
+    }
+  }
 }
 </script>

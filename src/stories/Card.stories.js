@@ -18,3 +18,8 @@ const Template = (args) => ({
   Primary.args = {
     name: 'Adrianna'
   }
+
+  export const Secondary = Template.bind({})
+  Secondary.args = {
+    name: 'Guevarra'
+  }
